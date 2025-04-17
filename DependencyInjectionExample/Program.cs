@@ -4,6 +4,7 @@ using DependencyInjectionExample.Services;
 
 namespace DependencyInjectionExample
 {
+    // https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences
     public class Program
     {
         public static void Main(string[] args)
