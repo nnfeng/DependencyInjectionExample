@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Lifetimes";
+}
+
+<h1>Lifetimes</h1>
+<p>Controller Operations</p>
+<table class="table">
+    <tr>
+       <th>Transient</th>
+       <td>@ViewBag.Transient.OperationId</td>
+    </tr>
+    <tr>
+       <th>Scoped</th>
+        <td>@ViewBag.Scoped.OperationId</td>
+    </tr>
+     <tr>
+       <th>Singleton</th>
+        <td>@ViewBag.Singleton.OperationId</td>
+     </tr>
+    <tr>
+        <th>Instance</th>
+        <td>@ViewBag.SingletonInstance.OperationId</td>
+    </tr>
+</table>
+<br/>
+<p>OperationService Operations</p>
+<table class="table">
+    <tr>
+        <th>Transient</th>
+        <td>@ViewBag.Service.TransientOperation.OperationId</td>
+    </tr>
+    <tr>
+        <th>Scoped</th>
+        <td>@ViewBag.Service.ScopedOperation.OperationId</td>
+    </tr>
+    <tr>
+        <th>Singleton</th>
+        <td>@ViewBag.Service.SingletonOperation.OperationId</td>
+    </tr>
+    <tr>
+        <th>Instance</th>
+        <td>@ViewBag.Service.SingletonInstanceOperation.OperationId</td>
+    </tr>
+</table>
